@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Юля Пшеничных](https://up.htmlacademy.ru/htmlcss/32/user/1761947).
-* Наставник: [Юлия Антонова](https://htmlacademy.ru/profile/id39082).
+* Наставник: [Юлия <3 Антонова](https://htmlacademy.ru/profile/id39082).
 
 ---
 
