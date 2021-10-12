@@ -2,15 +2,20 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+.navigation-avatar {
+  background-image: url("../images/catalog/sedona.svg");
+  width: 138px;
+  height: 70px;
 }
 body {
   font-family: "PT Sans", sans-serif;
@@ -32,12 +37,13 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.main-index {
+.foto-of-sedona {
   color: #000000;
-  background-color: #E5E5E5;
-  background-image: url("images/catalog/view-1.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: url("../images/catalog/view-1.jpg");
+  width: 1200px;
+  height: 485px;
 }
 .advantages-sublist {
   text-align: center;
@@ -63,6 +69,14 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  text-align: center;
+  text-transform: uppercase;
+}
+.newsletter-section-has-background {
+  background-image: url("../images/catalog/view-4.jpg");
+  width: 1200px;
+  height: 411px;
+  color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
 }
