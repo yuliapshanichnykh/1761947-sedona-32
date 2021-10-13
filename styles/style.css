@@ -140,7 +140,14 @@ body {
   line-height: 31px;
   color: #000000;
 }
-.place-card-type .place-card-price {
+.place-card-type {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.place-card-price {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
