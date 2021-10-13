@@ -12,20 +12,28 @@
   src: url("fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
+.page-header {
+  color: #000000;
+  background-color: #E5E5E5;
+}
 .navigation-avatar {
   background-image: url("../images/catalog/sedona.svg");
   width: 138px;
   height: 70px;
+}
+.options-has-background {
+  color: #E5E5E5;
+  background-color: #FFFFFF;
+  background-image: url("../images/catalog/view-5.jpg");
+  width: 1200px;
+  height: 408px;
+  background-repeat: no-repeat;
 }
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #E5E5E5;
-}
-.page-header {
-  color: #000000;
   background-color: #E5E5E5;
 }
 .navigation-link {
@@ -44,6 +52,7 @@ body {
   background-image: url("../images/catalog/view-1.jpg");
   width: 1200px;
   height: 485px;
+  background-repeat: no-repeat;
 }
 .advantages-sublist {
   text-align: center;
@@ -79,4 +88,89 @@ body {
   color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
+  background-repeat: no-repeat;
+}
+.footer-contacts {
+  font-family: "PT Sans", sans-serif;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+.breadcrumbs {
+  color: #FFFFFF
+}
+.breadcrumbs-item {
+  color: inherit;
+}
+.catalog-filter-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+.control-label {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+}
+.hotels-on-list {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 39px;
+  color: #000000;
+  text-transform: uppercase;
+}
+.cheap {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.place-card-title {
+  font-family: "PT Sans", sans-serif;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+.place-card-type .place-card-price {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+  text-transform: uppercase;
+}
+.plase-card-rating {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hotels-on-page {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #333333;
+}
+.follow-us {
+  font-family: "PT Sans", sans-serif;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.desc {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
 }
