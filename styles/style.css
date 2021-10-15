@@ -2,32 +2,15 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("fonts/ptsans-400.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("fonts/ptsans-700.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
-}
-.page-header {
-  color: #000000;
-  background-color: #E5E5E5;
-}
-.navigation-avatar {
-  background-image: url("../images/catalog/sedona.svg");
-  width: 138px;
-  height: 70px;
-}
-.options-has-background {
-  color: #E5E5E5;
-  background-color: #FFFFFF;
-  background-image: url("../images/catalog/view-5.jpg");
-  width: 1200px;
-  height: 408px;
-  background-repeat: no-repeat;
 }
 body {
   font-family: "PT Sans", sans-serif;
@@ -36,8 +19,17 @@ body {
   color: #333333;
   background-color: #E5E5E5;
 }
+.page-header {
+  color: #000000;
+  background-color: #E5E5E5;
+}
+.options-has-background {
+  color: #FFFFFF;
+  background-color: #83B3D3;
+  background-image: url("../images/catalog/view-5.jpg");
+  background-repeat: no-repeat;
+}
 .navigation-link {
-  font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
@@ -45,20 +37,15 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.foto-of-sedona {
-  color: #000000;
-  text-align: center;
-  text-transform: uppercase;
+.photo-of-sedona {
+  color: #FFFFFF;
   background-image: url("../images/catalog/view-1.jpg");
-  width: 1200px;
-  height: 485px;
   background-repeat: no-repeat;
 }
 .advantages-sublist {
   text-align: center;
 }
 .advantages-title-list {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   color: #FFFFFF;
@@ -66,7 +53,6 @@ body {
   text-transform: uppercase;
 }
 .advantages-caption {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
@@ -74,27 +60,26 @@ body {
   text-transform: uppercase;
 }
 .advantages-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-align: center;
   text-transform: uppercase;
 }
-.newsletter-section-has-background {
-  background-image: url("../images/catalog/view-4.jpg");
-  width: 1200px;
-  height: 411px;
-  color: #FFFFFF;
+.newsletter-section {
+  color: #000000;
+  background-color: #E5E5E5;
   text-align: center;
   text-transform: uppercase;
+}
+.newsletter-section-has-background {
+  background-image: url("../images/catalog/view-4.jpg");
+  color: #FFFFFF;
   background-repeat: no-repeat;
 }
 .footer-contacts {
-  font-family: "PT Sans", sans-serif;
   font-size: 40px;
   line-height: 40px;
-  font-weight: normal;
   text-align: center;
   text-transform: uppercase;
 }
@@ -103,79 +88,61 @@ body {
   line-height: 78px;
 }
 .breadcrumbs {
-  color: #FFFFFF
+  color: #FFFFFF;
 }
 .breadcrumbs-item {
   color: inherit;
 }
 .catalog-filter-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
 }
 .control-label {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
 }
 .hotels-on-list {
-  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 39px;
   color: #000000;
   text-transform: uppercase;
 }
-.cheap {
-  font-family: "PT Sans", sans-serif;
+.select-control {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
   text-transform: uppercase;
 }
 .place-card-title {
-  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 31px;
   color: #000000;
 }
-.place-card-type {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 23px;
+.place-card-type .place-card-price{
   color: #333333;
-  text-transform: uppercase;
 }
-.place-card-price {
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 23px;
+.place-card-rating {
   color: #333333;
-  text-transform: uppercase;
-}
-.plase-card-rating {
-  font-family: "PT Sans", sans-serif;
+  background-color: #f2f2f2;
   font-size: 16px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
 }
 .hotels-on-page {
-  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
   color: #333333;
 }
 .follow-us {
-  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 }
 .desc {
-  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
