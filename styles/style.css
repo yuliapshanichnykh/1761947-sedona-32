@@ -39,7 +39,7 @@ body {
 }
 .photo-of-sedona {
   color: #FFFFFF;
-  background-image: url("../images/catalog/view-1.jpg");
+  background-image: url("../images/index/view-1.jpg");
   background-repeat: no-repeat;
 }
 .advantages-sublist {
@@ -73,7 +73,7 @@ body {
   text-transform: uppercase;
 }
 .newsletter-section-has-background {
-  background-image: url("../images/catalog/view-4.jpg");
+  background-image: url("../images/index/view-4.jpg");
   color: #FFFFFF;
   background-repeat: no-repeat;
 }
