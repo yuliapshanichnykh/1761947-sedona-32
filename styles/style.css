@@ -16,24 +16,22 @@ html {
   height: 100%;
 }
 body {
-  width: 1200px;
   margin: 0;
+  background-color: #f2f2f2;
+}
+.container {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
-  font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  background-color: #E5E5E5;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-height: 408px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .page-header {
-  color: #000000;
-  background-color: #E5E5E5;
-  display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin: 0 auto;
+  width: 100%;
+  min-height: 65px;
+  outline: 1px solid green;
 }
 .navigation {
   display: flex;
@@ -49,6 +47,10 @@ body {
   max-width: 364px;
   margin-left: auto;
 }
+.page-content {
+  flex-grow: 1;
+  outline: 1px solid blue;
+}
 .options-has-background {
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -63,15 +65,8 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.main-container {
-  flex-grow: 1;
-}
 .page-container {
   width: 1200px;
-  margin: 0 auto;
-}
-.image {
-  display: block;
   margin: 0 auto;
 }
 .photo-of-sedona {
@@ -79,74 +74,107 @@ body {
   background-image: url("../images/index/view-1.jpg");
   background-repeat: no-repeat;
 }
-.advantages-illustrated-item {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 90px;
-  color: #FFFFFF;
-  background-color: #83B3D3;
-}
-.advantages-title-list {
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
-  text-align: center;
-  text-transform: uppercase;
-}
-.advantages-sublist {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #000000;
-}
-.advantages-item-desc {
-  width: 75px;
-}
-.advantages-caption .advantages-title {
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
-  text-align: center;
-  text-transform: uppercase;
-}
-.advantages-sublist-list {
-  display: flex;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #000000;
-}
-.advantages-item-description {
-  width: 75px;
-}
 .image-of-sedona {
   width: 800px;
 }
 .image-of-rocks-and-mountains {
   width: 800px;
 }
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.reasons {
+  text-align: center;
+}
+.reasons-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: li;
+}
+.reasons-item {
+  width: 400px;
+  outline: 1px solid green;
+  background-color: rgba(131, 179, 211, 0,2);
+}
+.reasons-item:nth-child(odd){
+  background-color: rgba(131, 179. 211, 0,12);
+}
+.reasons-item::after {
+  content: "—№"counter(li)"—";
+  counter-increment: li;
+  display: block;
+}
+.reasons-item-description {
+  box-sizing: border-box;
+  padding: 20px;
+}
+.reasons-item-image {
+  width: 800px;
+}
+.reasons-item-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.reasons-item-illustrated {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.reasons-item-illustrated .reasons-item-description {
+  width: 400px;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.reasons-sublist-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.reasons-sublist {
+  display: flex;
+  flex-wrap:wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+.reasons-sublist-item {
+  width: 400px;
+  outline: 1px solid pink;
+}
+.image-of-sedona .image-of-rocks-and-mountains {
+  width: 800px;
+}
 .newsletter-section {
   color: #000000;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
   text-align: center;
   text-transform: uppercase;
 }
 .newsletter-section-has-background {
   background-image: url("../images/index/view-4.jpg");
   color: #FFFFFF;
+  background-color: blue;
   background-repeat: no-repeat;
+}
+.page-footer {
+  width: 100%;
+  min-height: 120px;
+  outline: 1px solid green;
 }
 .page-footer-container {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between;
+  padding: 40px 72px;
 }
-.footer-social {
-  width: 150px;
-  margin-right: 46px;
+.footer-social .logo{
+  width: 168px;
 }
 .footer-contacts {
   width: 720px;
