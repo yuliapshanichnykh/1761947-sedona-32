@@ -16,6 +16,11 @@ html {
   height: 100%;
 }
 body {
+  font-family: "PT Sans", sans-serif;
+  min-width: 1200px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
   margin: 0;
   background-color: #f2f2f2;
 }
@@ -23,8 +28,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 1200px;
-  min-height: 408px;
+  width: 1200px;
+  min-height: 100vh;
   background-color: #FFFFFF;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
@@ -100,12 +105,12 @@ body {
 .reasons-item {
   width: 400px;
   outline: 1px solid green;
-  background-color: rgba(131, 179, 211, 0,2);
+  background-color: rgba(131, 179, 211, 0.2);
 }
 .reasons-item:nth-child(odd){
-  background-color: rgba(131, 179. 211, 0,12);
+  background-color: rgba(131, 179. 211, 0.12);
 }
-.reasons-item::after {
+.reasons-item h3::after {
   content: "—№"counter(li)"—";
   counter-increment: li;
   display: block;
@@ -148,9 +153,6 @@ body {
   width: 400px;
   outline: 1px solid pink;
 }
-.image-of-sedona .image-of-rocks-and-mountains {
-  width: 800px;
-}
 .newsletter-section {
   color: #000000;
   background-color: #FFFFFF;
@@ -160,7 +162,7 @@ body {
 .newsletter-section-has-background {
   background-image: url("../images/index/view-4.jpg");
   color: #FFFFFF;
-  background-color: blue;
+  background-color: #83B3D3;
   background-repeat: no-repeat;
 }
 .page-footer {
