@@ -70,26 +70,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.page-container {
-  width: 1200px;
-  margin: 0 auto;
-}
 .photo-of-sedona {
   color: #FFFFFF;
   background-image: url("../images/index/view-1.jpg");
   background-repeat: no-repeat;
-}
-.image-of-sedona {
-  width: 800px;
-}
-.image-of-rocks-and-mountains {
-  width: 800px;
-}
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  background-color: #FFFFFF;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 .reasons {
   text-align: center;
@@ -108,7 +92,7 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 .reasons-item:nth-child(odd){
-  background-color: rgba(131, 179. 211, 0.12);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 .reasons-item h3::after {
   content: "—№"counter(li)"—";
