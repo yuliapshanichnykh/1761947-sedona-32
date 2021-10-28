@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
+    <div class="container">
     <header class="page-header">
       <nav class="navigation">
         <ul class="navigation-list">
@@ -124,12 +125,15 @@
                 <input class="catalog-filter-input" type="number" name="max-price" placeholder="9000">
               </label>
             </fieldset>
+            <div class="buttons">
             <button class="button" type="submit">Применить</button>
             <button class="button" type="reset">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
       <section class="hotel-catalog">
+        <div class="catalog-header">
         <h3 class="hotels-on-list">Найдено гостиниц: 38</h3>
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
@@ -151,57 +155,66 @@
             <span class="visually-hidden">Показать список</span>
           </a>
         </div>
-        <ul>
+        </div>
+        <ul class="place-card-catalog">
           <li class="place-card">
-            <a class="place-card-link" href="place.html">
-              <h3 class="place-card-title">Amara Resort & Spa</h3>
-            </a>
             <a class="place-card-image-link" href="place.html">
               <img class="place-card-image" src="images/catalog/hotel-1.jpg" width="180" height="120" alt="Amara Resort and Spa">
             </a>
+            <div class="hotel-info">
+            <a class="place-card-link" href="place.html">
+              <h3 class="place-card-title">Amara Resort & Spa</h3>
+            </a>
             <p class="place-card-price">От 4000 ₽</p>
-            <a href="#" class="place-card-button details">подробнее</a>
-            <a href="#" class="place-card-button favorites">В избранное</a>
+            <button class="place-card-button details">подробнее</button>
+            <button class="place-card-button favorites">В избранное</button>
             <p class="place-card-type">Гостиница</p>
+           </div>
             <p class="place-card-rating"> РЕЙТИНГ:8,5</p>
           </li>
           <li class="place-card">
-            <a class="place-card-link" href="place.html">
-              <h3 class="place-card-title">Desert Quail Inn</h3>
-            </a>
             <a class="place-card-image-link" href="place.html">
               <img class="place-card-image" src="images/catalog/motel.jpg" width="180" height="120" alt="Desert Quail Inn">
             </a>
-            <p class="place-card-price">От 3000 ₽</p>
-            <a href="#" class="place-card-button details">подробнее</a>
-            <a href="#" class="place-card-button favorites">В избранное</a>
+            <div class="hotel-info">
+            <a class="place-card-link" href="place.html">
+              <h3 class="place-card-title">Desert Quail Inn</h3>
+            </a>
+           <p class="place-card-price">От 3000 ₽</p>
+            <button class="place-card-button details">подробнее</button>
+            <button class="place-card-button favorites">В избранное</button>
             <p class="place-card-type">Мотель</p>
+          </div>
             <p class="place-card-rating"> РЕЙТИНГ:8,9</p>
           </li>
           <li class="place-card">
-            <a class="place-card-link" href="place.html">
-              <h3 class="place-card-title">Villas at Poco Diablo</h3>
-            </a>
             <a class="place-card-image-link" href="place.html">
               <img class="place-card-image" src="images/catalog/apartaments.jpg" width="180" height="120" alt="Villas at Poco Diablo">
             </a>
+            <div class="hotel-info">
+            <a class="place-card-link" href="place.html">
+              <h3 class="place-card-title">Villas at Poco Diablo</h3>
+            </a>
             <p class="place-card-price">От 2000 ₽</p>
-            <a href="#" class="place-card-button details">подробнее</a>
-            <a href="#" class="place-card-button favorites">В избранное</a>
+            <button class="place-card-button details">подробнее</button>
+            <button class="place-card-button favorites">В избранное</button>
             <p class="place-card-type">Апартаменты</p>
+          </div>
             <p class="place-card-rating"> РЕЙТИНГ:9,2</p>
           </li>
           <li class="place-card">
-            <a class="place-card-link" href="place.html">
-              <h3 class="place-card-title">GreenTree Inn</h3>
-            </a>
             <a class="place-card-image-link" href="place.html">
               <img class="place-card-image" src="images/catalog/hotel-2.jpg" width="180" height="120" alt="GreenTree Inn">
             </a>
+            <div class="hotel-info">
+            <a class="place-card-link" href="place.html">
+              <h3 class="place-card-title">GreenTree Inn</h3>
+            </a>
             <p class="place-card-price">От 3000 ₽</p>
-            <a href="#" class="place-card-button details">подробнее</a>
-            <a href="#" class="place-class-button favorites">В избранное</a>
+            <button class="place-card-button details">подробнее</button>
+            <button class="place-class-button favorites">В избранное</button>
             <p class="place-card-type">Гостиница</p>
+          </div>
             <p class="place-card-rating"> РЕЙТИНГ:9,2</p>
           </li>
         </ul>
@@ -211,7 +224,7 @@
             <a class="pagination-link pagination-current">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link">4</a>
+            <a class="pagination-link">2</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link">3</a>
@@ -248,6 +261,7 @@
     </main>
 
     <footer class="page-footer">
+      <div class="page-footer-container">
       <section class="footer-social">
         <ul class="footer-social-list">
           <li class="footer-social-item">
@@ -270,9 +284,11 @@
       <section class="footer-contacts">
         <a href="tel:+78128121212">+7 (812) 812-12-12</a>
         <a href=" https://htmlacademy.ru/">
-          <img class="logo" src="images/catalog/htmlacademy.svg" width="115" height="34" alt="logo-htmlacademy" />
+          <img class="logo" src="images/catalog/htmlacademy.svg" width="115" height="34" alt="logo-htmlacademy">
         </a>
       </section>
+    </div>
     </footer>
+  </div>
   </body>
 </html>
