@@ -211,12 +211,11 @@ body {
   outline: 5px solid rgba(255, 99, 78, 0.5);
   outline-offset: -5px;
 }
-.place-card {
-  display: flex;
-}
 .pagination {
   display: flex;
   list-style: none;
+  padding-left: 72px;
+  margin-top: -10px;
 }
 .pagination-item {
   box-sizing: border-box;
@@ -233,11 +232,11 @@ body {
 }
 .pagination-list {
   display: flex;
+  padding-top: 30px;
 }
 .quantity-selection {
   display: flex;
-  margin-left: 280px;
-  margin-top: 30px;
+  margin-left: auto;
 }
 .pagination-current {
   color: #000000;
@@ -276,16 +275,76 @@ body {
   color: #333333;
   text-transform: uppercase;
 }
+.place-card {
+  display: flex;
+  padding: 30px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+.place-card:first-child {
+  border-top: 1px solid #E6E6E6;
+}
+.place-card-image-link {
+  flex: none;
+  margin-right: 36px;
+  width: 180px;
+}
+.place-card-image-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hotel-info {
+  flex-grow: 1;
+}
 .place-card-title {
-  margin-top: -5px;
-  margin-left: 37px;
+  margin: -2px 0 0;
   font-size: 24px;
   line-height: 31px;
-  color: #000000;
+}
+.place-card-title a {
+  text-decoration: none;
+  color: inherit;
+}
+.search-result-info {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  grid-gap: 31px 8px;
+}
+.search-result-info p {
+  margin: 0;
+}
+.search-result-link {
+  white-space: nowrap;
+}
+.search-result-rating-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100%;
+}
+.search-result-stars {
+  color: #83B3D3;
+  letter-spacing: 0.35em;
+}
+.search-result-rating {
+  margin-top: auto;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  padding: 10px 20px 9px;
+  min-width: 160px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+  border-radius: 4px;
 }
 .place-card-type {
   margin-bottom: 13px;
   margin-left: 37px;
+}
+.search-result-link {
+white-space: nowrap;
 }
 .place-card-button-details {
   border: 4px solid #756257;
@@ -294,7 +353,6 @@ body {
   color: #FFFFFF;
   width: 151px;
   height: 37px;
-  margin-left: 37px;
 }
 .place-card-button-favorites {
   border: 4px solid #83B3D3;
