@@ -32,10 +32,11 @@
             <li class="navigation-item">
               <a class="navigation-link" href="#">
                 <span class="visually-hidden">Избранное</span>
+                <span class="favorites">12</span>
               </a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">Кнопка Хочу Сюда!</a>
+              <a class="navigation-link-button">Хочу Сюда!</a>
             </li>
           </ul>
         </nav>
@@ -43,14 +44,16 @@
 
       <main class="page-content main-index">
         <div class="page-container">
-          <h1>Gorgeous Sedona</h1>
+          <h1 class="visually-hidden">Gorgeous Sedona</h1>
           <div class="image-description">
             <section class="photo-of-sedona">
               <img class="image" src="images/index/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the grand canyon sucks">
               <h2 class="visually-hidden">Welcome to the gorgeous Sedona because the Grand Canyon sucks</h2>
             </section>
-            <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <div class="description">
+              <h2 class="description-sedona">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+              <p class="reasons-sedona">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            </div>
           </div>
           <section class="advantages">
             <h2 class="visually-hidden">Преимущества</h2>
@@ -112,18 +115,22 @@
             </div>
           </section>
           <section class="useful-information">
-            <h3>Заинтересовались?</h3>
-            <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <button class="button" type="button">ПОИСК ГОСТИНИЦЫ В Cедоне</button>
-            <section class="newsletter-section newsletter-section-has-background">
-              <h3>Подпишитесь на рассылку</h3>
-              <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-              <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="appointment-date">Ваш e-mail</label>
-                <input type="email" id="appointment-date" name="appointment-date" placeholder="Ваш e-mail">
-                <button class="button" type="submit">Подписаться</button>
-              </form>
-            </section>
+            <div class="hotel-offer">
+              <h3 class="excerpt">Заинтересовались?</h3>
+              <p class="desc-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+              <button class="button" type="button">ПОИСК ГОСТИНИЦЫ В Cедоне</button>
+            </div>
+            <div class="useful-information">
+              <section class="newsletter-section newsletter-section-has-background">
+                <h3 class="information-with-subscription">Подпишитесь на рассылку</h3>
+                <p class="only-useful-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+                  <label class="visually-hidden" for="appointment-date">Ваш e-mail</label>
+                  <input class="your-email" type="email" id="appointment-date" name="appointment-date" placeholder="Ваш e-mail">
+                  <button class="button-subscribe" type="submit">Подписаться</button>
+                </form>
+              </section>
+            </div>
           </section>
         </div>
       </main>
@@ -149,11 +156,11 @@
             </ul>
           </section>
           <section class="footer-contacts">
-            <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-            <a href=" https://htmlacademy.ru/">
-              <img class="logo" src="images/catalog/htmlacademy.svg" width="115" height="34" alt="logo-htmlacademy">
-            </a>
+            <a class="number" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </section>
+          <a class="logo-html" href=" https://htmlacademy.ru/">
+            <img class="logo" src="images/catalog/htmlacademy.svg" width="115" height="34" alt="logo-htmlacademy">
+          </a>
         </div>
       </footer>
     </div>

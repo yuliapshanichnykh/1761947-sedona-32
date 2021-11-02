@@ -36,7 +36,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Кнопка Хочу Сюда!</a>
+          <a class="navigation-link-button">Хочу Сюда!</a>
         </li>
       </ul>
     </nav>
@@ -51,7 +51,7 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Каталог</a>
+              <a class="breadcrumbs-link">Гостиницы</a>
             </li>
           </ul>
         </header>
@@ -63,21 +63,21 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
+                    <input class="control-input" type="checkbox" name="pool" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
+                    <input class="control-input" type="checkbox" name="parking" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
+                    <input class="control-input" type="checkbox" name="Wi-Fi">
                     <span class="control-mark"></span>
                     <span class="control-label">Wi-Fi</span>
                   </label>
@@ -89,21 +89,21 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel" checked>
+                    <input class="control-input" type="radio" name="product-group" value="hotel" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
+                    <input class="control-input" type="radio" name="product-group" value="motel">
                     <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="visually-hidden control-input" type="radio" name="product-group" value="apartament">
+                    <input class="control-input" type="radio" name="product-group" value="apartament">
                     <span class="control-mark"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
@@ -126,8 +126,8 @@
               </label>
             </fieldset>
             <div class="buttons">
-              <button class="button" type="submit">Применить</button>
-              <button class="button" type="reset">Сбросить</button>
+              <button class="button-catalog-apply" type="submit">Применить</button>
+              <button class="button-catalog" type="reset">Сбросить</button>
             </div>
           </form>
         </section>
@@ -168,8 +168,8 @@
               <div class="search-result-info">
                 <p class="place-card-type">Гостиница</p>
                 <p class="place-card-price">От 4000 ₽</p>
-                <button class="place-card-button-details search-result-link">подробнее</button>
-                <button class="place-card-button-favorites search-result-link">В избранное</button>
+                <a class="place-card-button-details search-result-link">подробнее</a>
+                <a class="place-card-button-favorites search-result-link">В избранное</a>
               </div>
             </div>
             <div class="search-result-rating-block">
@@ -188,8 +188,8 @@
               <div class="search-result-info">
                 <p class="place-card-type">Мотель</p>
                 <p class="place-card-price">От 3000 ₽</p>
-                <button class="place-card-button-details search-result-link">подробнее</button>
-                <button class="place-card-button-favorites search-result-link">В избранное</button>
+                <a class="place-card-button-details search-result-link">подробнее</a>
+                <a class="place-card-button-favorites search-result-link">В избранное</a>
               </div>
             </div>
             <div class="search-result-rating-block">
@@ -208,8 +208,8 @@
               <div class="search-result-info">
                 <p class="place-card-type">Апартаменты</p>
                 <p class="place-card-price">От 2000 ₽</p>
-                <button class="place-card-button-details search-result-link">подробнее</button>
-                <button class="place-card-button-favorites search-result-link">В избранное</button>
+                <a class="place-card-button-details search-result-link">подробнее</a>
+                <a class="place-card-button-favorites search-result-link">В избранное</a>
               </div>
             </div>
             <div class="search-result-rating-block">
@@ -228,8 +228,8 @@
               <div class="search-result-info">
                 <p class="place-card-type">Гостиница</p>
                 <p class="place-card-price">От 3000 ₽</p>
-                <button class="place-card-button-details search-result-link">подробнее</button>
-                <button class="place-card-button-favorites search-result-link">В избранное</button>
+                <a class="place-card-button-details search-result-link">подробнее</a>
+                <a class="place-card-button-favorites search-result-link">В избранное</a>
               </div>
             </div>
             <div class="search-result-rating-block">
@@ -261,7 +261,7 @@
             </li>
           </ul>
           <form class="quantity-selection">
-            <label class="hotels-on-page">Гостиниц на странице</label>
+            <label class="hotels-on-page">Гостиниц на странице:</label>
             <select class="select-control" id="sorting-list" name="sorting">
               <option value="1">1</option>
               <option value="2">2</option>
@@ -271,16 +271,17 @@
           </form>
         </div>
       </section>
-      <section class="newsletter-section">
-        <h3 class="follow-us">Подпишитесь на рассылку</h3>
-        <p class="desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="appointment-date">Ваш e-mail</label>
-          <input type="email" id="appointment-date" name="appointment-date" placeholder="Ваш e-mail">
-          <button class="button" type="submit">Подписаться</button>
-        </form>
-      </section>
-    </main>
+      <div class="useful-information">
+        <section class="newsletter-section">
+          <h3 class="information-with-subscription">Подпишитесь на рассылку</h3>
+          <p class="only-useful-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="appointment-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="appointment-date">Ваш e-mail</label>
+            <input class="your-email" type="email" id="appointment-date" name="appointment-date" placeholder="Ваш e-mail">
+            <button class="button-subscribe" type="submit">Подписаться</button>
+          </form>
+        </section>
+      </main>
     <footer class="page-footer">
       <div class="page-footer-container">
         <section class="footer-social">
@@ -303,11 +304,11 @@
           </ul>
         </section>
         <section class="footer-contacts">
-          <a href="tel:+78128121212">+7 (812) 812-12-12</a>
-          <a href=" https://htmlacademy.ru/">
-            <img class="logo" src="images/catalog/htmlacademy.svg" width="115" height="34" alt="logo-htmlacademy">
-          </a>
+          <a class="number" href="tel:+78128121212">+7 (812) 812-12-12</a>
         </section>
+        <a class="logo-html" href=" https://htmlacademy.ru/">
+          <img class="logo" src="images/catalog/htmlacademy.svg" width="115" height="34" alt="logo-htmlacademy">
+        </a>
       </div>
     </footer>
   </div>
