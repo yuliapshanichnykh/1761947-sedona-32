@@ -36,7 +36,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link-button">Хочу Сюда!</a>
+          <a class="button-secondary navigation-link-button" href="#">Хочу Сюда!</a>
         </li>
       </ul>
     </nav>
@@ -63,21 +63,21 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="pool" checked>
+                    <input class="visually-hidden control-input" type="checkbox" name="pool" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Бассейн</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="parking" checked>
+                    <input class="visually-hidden control-input" type="checkbox" name="parking" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Парковка</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="checkbox" name="Wi-Fi">
+                    <input class="visually-hidden control-input" type="checkbox" name="Wi-Fi">
                     <span class="control-mark"></span>
                     <span class="control-label">Wi-Fi</span>
                   </label>
@@ -89,21 +89,21 @@
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="hotel" checked>
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="hotel" checked>
                     <span class="control-mark"></span>
                     <span class="control-label">Гостиница</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="motel">
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="motel">
                     <span class="control-mark"></span>
                     <span class="control-label">Мотель</span>
                   </label>
                 </li>
                 <li class="catalog-filter-item">
                   <label class="control">
-                    <input class="control-input" type="radio" name="product-group" value="apartament">
+                    <input class="visually-hidden control-input" type="radio" name="product-group" value="apartament">
                     <span class="control-mark"></span>
                     <span class="control-label">Апартаменты</span>
                   </label>
@@ -164,12 +164,13 @@
             <div class="hotel-info">
               <a class="place-card-link" href="place.html">
                 <h3 class="place-card-title">Amara Resort & Spa</h3>
+                <a href="#">Amara Resort & Spa</a>
               </a>
               <div class="search-result-info">
                 <p class="place-card-type">Гостиница</p>
                 <p class="place-card-price">От 4000 ₽</p>
-                <a class="place-card-button-details search-result-link">подробнее</a>
-                <a class="place-card-button-favorites search-result-link">В избранное</a>
+                <a class="button button-secondary search-result-link" href="#">подробнее</a>
+                <a class="button button-primary search-result-link" href="#">В избранное</a>
               </div>
             </div>
             <div class="search-result-rating-block">
@@ -184,12 +185,13 @@
             <div class="hotel-info">
               <a class="place-card-link" href="place.html">
                 <h3 class="place-card-title">Desert Quail Inn</h3>
+                <a href="#">Desert Quail Inn</a>
               </a>
               <div class="search-result-info">
                 <p class="place-card-type">Мотель</p>
                 <p class="place-card-price">От 3000 ₽</p>
-                <a class="place-card-button-details search-result-link">подробнее</a>
-                <a class="place-card-button-favorites search-result-link">В избранное</a>
+                <a class="button button-secondary search-result-link" href="#">подробнее</a>
+                <a class="button button-primary search-result-link" href="#">В избранное</a>
               </div>
             </div>
             <div class="search-result-rating-block">
@@ -204,12 +206,13 @@
             <div class="hotel-info">
               <a class="place-card-link" href="place.html">
                 <h3 class="place-card-title">Villas at Poco Diablo</h3>
+                <a href="#">Villas at Poco Diablo</a>
               </a>
               <div class="search-result-info">
                 <p class="place-card-type">Апартаменты</p>
                 <p class="place-card-price">От 2000 ₽</p>
-                <a class="place-card-button-details search-result-link">подробнее</a>
-                <a class="place-card-button-favorites search-result-link">В избранное</a>
+                <a class="button button-secondary search-result-link" href="#">подробнее</a>
+                <a class="button button-primary search-result-link" href="#">В избранное</a>
               </div>
             </div>
             <div class="search-result-rating-block">
@@ -224,12 +227,13 @@
             <div class="hotel-info">
               <a class="place-card-link" href="place.html">
                 <h3 class="place-card-title">GreenTree Inn</h3>
+                <a href="#">GreenTree Inn</a>
               </a>
               <div class="search-result-info">
                 <p class="place-card-type">Гостиница</p>
                 <p class="place-card-price">От 3000 ₽</p>
-                <a class="place-card-button-details search-result-link">подробнее</a>
-                <a class="place-card-button-favorites search-result-link">В избранное</a>
+                <a class="button button-secondary search-result-link" href="#">подробнее</a>
+                <a class="button button-primary search-result-link" href="#">В избранное</a>
               </div>
             </div>
             <div class="search-result-rating-block">
@@ -238,26 +242,26 @@
             </div>
           </li>
         </ul>
-        <button class="button-pagination-load-more" type="button">Загрузить еще</button>
+        <button class="button button-primary show-more-button" type="button">Загрузить еще</button>
         <div class="pagination-list">
           <ul class="pagination">
             <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+              <a class="pagination-link pagination-current" href="#">1</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">2</a>
+              <a class="pagination-link" href="#">2</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">3</a>
+              <a class="pagination-link" href="#">3</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">4</a>
+              <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">...</a>
+              <a class="pagination-link" href="#">...</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link">10</a>
+              <a class="pagination-link" href="#">10</a>
             </li>
           </ul>
           <form class="quantity-selection">
@@ -287,17 +291,17 @@
         <section class="footer-social">
           <ul class="footer-social-list">
             <li class="footer-social-item">
-              <a class="button" href="https://www.twitter.com/htmlacademy_ru">
+              <a class="button-network" href="https://www.twitter.com/htmlacademy_ru">
                 <span class="visually-hidden">Twitter</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.facebook.com/htmlacademy">
+              <a class="button-network" href="https://www.facebook.com/htmlacademy">
                 <span class="visually-hidden">Facebook</span>
               </a>
             </li>
             <li class="footer-social-item">
-              <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <a class="button-network" href="https://www.youtube.com/c/HTMLAcademyRUS">
                 <span class="visually-hidden">Youtube</span>
               </a>
             </li>
