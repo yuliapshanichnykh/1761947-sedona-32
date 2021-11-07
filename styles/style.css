@@ -89,8 +89,10 @@ body {
 }
 .buttons {
   display: grid;
-  padding-left: 81px;
+  flex: none;
+  margin-left: 81px;
   padding-top: 34px;
+  width: 160px;
 }
 .button-catalog-apply {
   height: 48px;
@@ -98,7 +100,7 @@ body {
   background: #83B3D3;
   color: #FFFFFF;
   margin-bottom: 20px;
-  font-family: 'PT Sans';
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -201,16 +203,17 @@ main {
   text-align: center;
   text-decoration: none;
 }
-.navigation-item {
+.navigation-link-item {
+  margin-right: 33px;
+}
+.navigation-link {
   margin-left: 20px;
 }
 .page-content {
   flex-grow: 1;
   outline: 1px solid blue;
-
 }
 .options-has-background {
-  height: 408px;
   padding: 35px 72px;
   color: #FFFFFF;
   background-color: #83B3D3;
@@ -506,12 +509,16 @@ main {
   outline-offset: -5px;
 }
 .catalog-filter-group {
+  width: 200px;
+  margin: 0 20px 0 0;
   padding: 0;
   border: 0;
-  padding-right: 67px;
 }
 .catalog-filter-group-price {
-  padding-left: 167px;
+  margin-left: auto;
+  padding: 0;
+  flex: none;
+  width: 287px;
   border: 0;
 }
 .catalog-filter-list {
@@ -590,6 +597,7 @@ main {
   margin-right: 81px;
 }
 .catalog-filter-title {
+  padding: 0;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
