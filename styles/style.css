@@ -100,24 +100,16 @@ body {
   display: grid;
   flex: none;
   margin-left: 81px;
-  padding-top: 34px;
+  padding-top: 45px;
   width: 160px;
 }
 .button-catalog-apply {
   height: 48px;
   width: 160px;
-  background: #83B3D3;
-  color: #FFFFFF;
   margin-bottom: 20px;
-  border: none;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
   align-items: center;
-  text-align: center;
-  text-transform: uppercase;
 }
 .button-catalog-apply:hover{
   background-color: #68A2CA;
@@ -127,7 +119,6 @@ body {
   border: none;
   font-style: normal;
   font-weight: normal;
-  margin-top: -40px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
@@ -172,9 +163,9 @@ body {
   display: inline-block;
   vertical-align: top;
   box-sizing: border-box;
-  padding: 17px;
+  padding: 14px;
   width: 575px;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 36px;
 }
 main {
@@ -217,6 +208,8 @@ main {
   align-items: center;
   padding: 0;
   margin: 0;
+  font-size: 20px;
+  line-height: 26px;
 }
 .navigation-user .navigation-list {
   min-width: 16px;
@@ -224,8 +217,7 @@ main {
 }
 .navigation-user {
   list-style-type: none;
-  margin-left: auto;
-  padding-left: 25px;
+  margin-left: -7px;
   justify-content: flex-end;
 }
 .navigation-icon {
@@ -254,12 +246,13 @@ main {
   height: 38px;
   text-decoration: none;
 }
-.user-navigation-item:last-child {
-  margin-left: 20px;
+.navigation-logo {
+  margin-bottom: -8px;
 }
 .navigation-link {
   display: block;
-  padding: 19px 0;
+  padding: 0;
+  margin: 0;
   font-weight: 700;
   color: #000000;
   background: #FFFFFF;
@@ -280,11 +273,17 @@ main {
   background-color: #756275;
   content: "";
 }
+.user-navigation-item {
+  margin-left: 10px;
+}
 .navigation-item {
   margin-right: 33px;
 }
 .page-content {
   flex-grow: 1;
+}
+.city-of-sedona {
+  margin-bottom: 5px;
 }
 .options-has-background {
   padding: 27px 72px 86px;
@@ -301,7 +300,7 @@ main {
   max-width: 720px;
   margin-top: 0;
   margin-right: auto;
-  margin-bottom: 23px;
+  margin-bottom: 31px;
   margin-left: auto;
   font-size: 30px;
   line-height: 36px;
@@ -453,14 +452,14 @@ main {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 .desc-text {
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   margin: 0;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
   text-align: center;
 }
 .appointment-form {
@@ -521,7 +520,6 @@ main {
   justify-content: space-around;
 }
 .footer-social {
-  max-width: 112px;
   margin-right: auto;
 }
 .footer-social-list {
@@ -543,13 +541,13 @@ main {
   border-radius: 10px;
 }
 .footer-social-tw {
-  padding: 12px 11px;
+  padding: 11px 20px 11px 0;
 }
 .footer-social-fb {
-  padding: 11px 15px;
+  padding: 11px 23px;
 }
 .footer-social-yt {
-  padding: 12px 10px;
+  padding: 12px 33px;
 }
 .footer-social .logo{
   width: 168px;
@@ -583,21 +581,39 @@ main {
   padding: 0;
   margin: 0;
   display: flex;
-  list-style-type: none;
+  flex-wrap: wrap;
+  list-style: none;
   color: #FFFFFF;
 }
 .breadcrumbs-item {
+  margin: 0 8px 10px 0;
   color: inherit;
 }
 .breadcrumbs-link {
+  position: relative;
+  padding-right: 20px;
+  text-decoration: none;
+  color: inherit;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
-  margin-right: 11px;
+  text-decoration: none;
 }
-.breadcrumbs-link-hotels {
-  margin-left: 10px;
+.breadcrumbs-item:not(:last-child) .breadcrumbs-link::after {
+  content: "";
+}
+.breadcrumbs-link::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-image: url(../images/catalog/arrow.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 .catalog-header {
   display: flex;
@@ -607,7 +623,7 @@ main {
   display: block;
   size: 18px;
   line-height: 24px;
-  padding-top: 45px;
+  padding-top: 35px;
 }
 .catalog-filter {
   display: flex;
@@ -632,7 +648,9 @@ main {
   font-size: 18px;
   line-height: 23px;
   list-style: none;
+  margin: 0;
   padding: 0;
+  border: 0;
   width: max-content;
 }
 .control-label {
@@ -704,18 +722,8 @@ main {
   border: 2px solid #83B3D3;
 }
 .select-control-on-page {
-  border: 2px solid #E6E6E6;
-  box-sizing: border-box;
   width: 160px;
   height: 48px;
-  margin-left: 51px;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 23px;
-  color: #333333;
-  text-transform: uppercase;
 }
 .sorting {
   display: flex;
