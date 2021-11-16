@@ -548,7 +548,7 @@ main {
   border: 3px solid #83B3D3;
 }
 .newsletter-section {
-  padding: 91px 0 135px;
+  padding: 89px 0 135px;
   color: #000000;
   background-color: #FFFFFF;
   text-align: center;
@@ -760,7 +760,7 @@ main {
 }
 .pagination-list {
   display: flex;
-  padding: 33px 72px 0;
+  padding: 36px 71px 0;
 }
 .popover {
   border-radius: 10%;
