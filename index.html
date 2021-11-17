@@ -44,11 +44,13 @@
                 <div class="popover-content">
                   <ul class="cart-items-list">
                     <li class="cart-item">
-                      <img class="icon-photo" src="images/main-page/hotel-2-small.jpg">
+                      <a class="hotel-place" href="#">
+                      <img class="icon-photo" src="images/main-page/hotel-2-small.jpg" alt="hotel-2">
                       <div class="hotel-details">
                         <p class="cart-item-title">Desert Quail Inn</p>
-                        <p class="cart-item-price">Мотель</p>
+                        <p class="cart-item-place">Мотель</p>
                       </div>
+                    </a>
                       <button type="button" class="cart-item-button button">
                         <svg class="bucket" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g opacity="0.2">
@@ -62,11 +64,13 @@
                       </button>
                     </li>
                     <li class="cart-item">
-                      <img class="icon-photo" src="images/main-page/hotel-3-small.jpg">
+                      <a class="hotel-place" href="#">
+                      <img class="icon-photo" src="images/main-page/hotel-3-small.jpg" alt="hotel-3-small">
                       <div class="hotel-details">
                         <p class="cart-item-title">Villas at Poco Diablo</p>
-                        <p class="cart-item-price">Апартаменты</p>
+                        <p class="cart-item-place">Апартаменты</p>
                       </div>
+                    </a>
                       <button type="button" class="cart-item-button button">
                         <svg class="bucket" aria-hidden="true" focusable="false" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <g opacity="0.2">
@@ -81,7 +85,7 @@
                     </li>
                   </ul>
                 </div>
-                <button class="button button-secondary button-favorites">Все избранные</button>
+                <a class="button button-secondary button-favorites" href="#">Все избранные</a>
               </div>
             </li>
             <li class="user-navigation-item">
@@ -106,12 +110,11 @@
           </div>
           <section class="advantages">
             <h2 class="visually-hidden">Преимущества</h2>
-
               <section class="reasons">
                 <ol class="reasons-list">
                   <li class="reasons-item reasons-item-illustrated">
                     <div class="reasons-item-description">
-                      <h3 class="reasons-title">Настоящий городок</h3>
+                      <h3 class="reasons-title">Настоящий <br> городок</h3>
                       <p class="reasons-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                     </div>
                     <div class="reasons-item-image">
@@ -133,7 +136,7 @@
                           <path d="M57.9 47.2H54.9V51.0999H57.9V47.2Z" fill="#81B3D2"/>
                         </svg>
                         <h4 class="advantages-caption">Жильё</h4>
-                        <p class="advantages-description">Рекомендуем пожить <br> в настоящем мотеле, всё <br> как в кино!</p>
+                        <p class="advantages-description">Рекомендуем пожить в&nbsp;настоящем мотеле, <br> всё как в&nbsp;кино!</p>
                       </li>
                       <li class="reasons-sublist-item">
                         <svg class="burger-logo" aria-hidden="true" focusable="false" width="74" height="70" viewBox="0 0 74 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -145,7 +148,7 @@
                           <path d="M44.7 12.2C45.7493 12.2 46.6 11.3045 46.6 10.2C46.6 9.09538 45.7493 8.19995 44.7 8.19995C43.6506 8.19995 42.8 9.09538 42.8 10.2C42.8 11.3045 43.6506 12.2 44.7 12.2Z" fill="#81B3D2"/>
                         </svg>
                         <h4 class="advantages-caption">Еда</h4>
-                        <p class="advantages-description">Всегда заказывайте <br> топовый фирменный бургер, <br> вы неразочаруетесь!</p>
+                        <p class="advantages-description">Всегда заказывайте <br> топовый фирменный бургер, вы&nbsp;не разочаруетесь!</p>
                       </li>
                       <li class="reasons-sublist-item">
                         <svg class="present-logo" aria-hidden="true" focusable="false" width="64" height="76" viewBox="0 0 64 76" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +162,7 @@
                           </defs>
                         </svg>
                         <h4 class="advantages-caption">Сувениры</h4>
-                        <p class="advantages-description">Не только китайского, <br> но и настоящего местного производства!</p>
+                        <p class="advantages-description">Не&nbsp;только китайского, но&nbsp;и&nbsp;настоящего местного производства!</p>
                       </li>
                     </ul>
                   </li>
@@ -174,7 +177,7 @@
                   </li>
                   <li class="reasons-item">
                     <div class="reasons-item-description">
-                      <h3 class="advantages-title">Небольшая площадь</h3>
+                      <h3 class="advantages-title">Небольшая <br> площадь</h3>
                       <p class="advantages-description">Все достопримечательности находятся очень близко</p>
                     </div>
                   </li>
@@ -240,6 +243,46 @@
           <a class="logo-html" href=" https://htmlacademy.ru/">
             <img class="logo" src="images/catalog/htmlacademy.svg" width="115" height="34" alt="logo-htmlacademy">
           </a>
+        </div>
+        <div class="modal-container modal-container-close">
+          <div class="modal modal-auth">
+            <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button>
+            <section class="modal-content">
+              <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+            </section>
+            <form class="auth-form">
+              <label class="designation">Дата заезда:</label>
+              <select class="auth-form-field field" id="data-list" name="data">
+                <option value="date">27 апреля 2020</option>
+              </select>
+            </form>
+            <p class="mark">Мы не можем отправить вас в прошлое</p>
+            <form class="auth-form">
+              <label class="designation">Дата выезда:</label>
+              <select class="auth-form-field field" id="data-list" name="data">
+                <option value="date">1 сенатября 2021</option>
+              </select>
+            </form>
+            <p class="mark the-note">На эти даты есть свободные номера. Пока есть.</p>
+            <div class="number-of-people">
+              <form>
+                <label class="designation" for="quantity">Взрослые:</label>
+                <button class="button-minus" type="button">-</button>
+                <input class="field-form" type="number" id="quantity" name="quantity" value="2">
+                <button class="button-plus" type="button">+</button>
+                <label class="designation designation-type" for="quantity">Дети:</label>
+                <button class="button-information">i</button>
+                <button class="button-minus" type="button">-</button>
+                <input class="field-form" type="number" id="quantity" name="quantity" value="1">
+                <button class="button-minus" type="button">+</button>
+              </form>
+            </div>
+            <div class="button-load-more">
+              <button class="button button-primary find-button" type="button">Найти</button>
+            </div>
+          </div>
         </div>
       </footer>
     </div>
