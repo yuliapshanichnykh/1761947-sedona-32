@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="icon" type="image/png" sizes="32x32" href="../1761947-sedona-32/images/favicon.png">
   <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
   <div class="container">
     <header class="page-header">
@@ -24,7 +22,7 @@
           </li>
         </ul>
         <a class="navigation-logo" href="index.html">
-          <img class="city-of-sedona" src="images/index/sedona.svg" width="138px" height="70px" alt="city-of-sedona">
+          <img class="city-of-sedona" src="images/index/sedona.svg" width="138" height="70" alt="city-of-sedona">
         </a>
         <ul class="navigation-list navigation-user">
           <li class="user-navigation-item">
@@ -38,7 +36,7 @@
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="user-navigation-item">
+          <li class="user-navigation-item user-navigation-favorites">
             <a class="navigation-link user-navigation-link navigation-link-favorites" href="#">
               <svg class="navigation-icon navigation-icon-favorit" aria-hidden="true" focusable="false" width="18"
                 height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -49,12 +47,12 @@
               <span class="visually-hidden">Избранное</span>
               <span class="favorites">12</span>
             </a>
-            <div class="popover popover-cart popover-open">
+            <div class="popover popover-cart">
               <div class="popover-content">
                 <ul class="cart-items-list">
                   <li class="cart-item">
                     <a class="hotel-place" href="#">
-                      <img class="icon-photo" src="images/main-page/hotel-2-small.jpg" width="48px" height="48px"
+                      <img class="icon-photo" src="images/main-page/hotel-2-small.jpg" width="48" height="48"
                         alt="hotel-2">
                       <div class="hotel-details">
                         <p class="cart-item-title">Desert Quail Inn</p>
@@ -84,7 +82,7 @@
                   </li>
                   <li class="cart-item">
                     <a class="hotel-place" href="#">
-                      <img class="icon-photo" src="images/main-page/hotel-3-small.jpg" width="48px" height="48px"
+                      <img class="icon-photo" src="images/main-page/hotel-3-small.jpg" width="48" height="48"
                         alt="hotel-3-small">
                       <div class="hotel-details">
                         <p class="cart-item-title">Villas at Poco Diablo</p>
@@ -145,7 +143,7 @@
               <li class="reasons-item reasons-item-illustrated">
                 <div class="reasons-item-description">
                   <h3 class="reasons-title">Настоящий <br> городок</h3>
-                  <p class="reasons-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+                  <p class="reasons-text">Седона — не аттракцион для&nbsp;туристов, там&nbsp;течёт <br> своя жизнь</p>
                 </div>
                 <div class="reasons-item-image">
                   <img class="image-of-sedona" src="images/index/view-2.jpg" width="800" height="384"
@@ -230,7 +228,7 @@
                 </div>
                 <div class="reasons-item-description">
                   <h3 class="reasons-title">Там есть <br> мост дьявола</h3>
-                  <p class="reasons-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                  <p class="reasons-text">Да, по нему можно пройти! Если&nbsp;вы&nbsp;осмелитесь, <br> разумеется</p>
                 </div>
               </li>
               <li class="reasons-item">
@@ -304,48 +302,48 @@
           <img class="logo" src="images/catalog/htmlacademy.svg" width="115" height="34" alt="logo-htmlacademy">
         </a>
       </div>
-      <div class="modal-container modal-container-close">
-        <div class="modal modal-auth">
-          <button class="modal-close-button" type="button">
-            <span class="visually-hidden">Закрыть</span>
-          </button>
-          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <form class="auth-form-main" action="https://echo.htmlacademy.ru/" method="post">
+    </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-auth">
+        <button class="modal-close-button" type="button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="auth-form-main" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="auth-form">
+            <label class="designation">Дата заезда:</label>
+            <input class="auth-form-field field" type="text" id="auth-form-field" name="data"
+              placeholder="27 апреля 2020">
+          </div>
+          <p class="mark">Мы не можем отправить вас в прошлое</p>
+          <div class="auth-form">
+            <label class="designation">Дата выезда:</label>
+            <input class="auth-form-field field" type="text" id="data-list" name="data" placeholder="1 сенатября 2021">
+          </div>
+          <p class="mark the-note">На эти даты есть свободные номера. Пока есть.</p>
+          <div class="number-of-people">
             <div class="auth-form">
-              <label class="designation">Дата заезда:</label>
-              <input class="auth-form-field field" type="text" id="data-list" name="data" placeholder="27 апреля 2020">
-            </div>
-            <p class="mark">Мы не можем отправить вас в прошлое</p>
-            <div class="auth-form">
-              <label class="designation">Дата выезда:</label>
-              <input class="auth-form-field field" type="text" id="data-list" name="data" placeholder="1 сенатября 2021">
-            </div>
-            <p class="mark the-note">На эти даты есть свободные номера. Пока есть.</p>
-            <div class="number-of-people">
-              <div class="auth-form">
-                <label class="designation-first" for="quantity">Взрослые:</label>
-                <button class="button-minus" type="button">-</button>
-                <input class="field-form" type="number" id="quantity" name="quantity" value="2">
-                <button class="button-plus" type="button">+</button>
-                <label class="designation designation-type" for="quantity">Дети:</label>
-                <div class="tooltip">
-                  <button class="button-information" type="button">i</button>
-                  <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
-                </div>
-                <button class="button-minus" type="button">-</button>
-                <input class="field-form" type="number" id="quantity" name="quantity" value="1">
-                <button class="button-minus" type="button">+</button>
+              <label class="designation-first" for="quantity">Взрослые:</label>
+              <button class="button-minus" type="button">-</button>
+              <input class="field-form" type="number" id="field-form" name="quantity" value="2">
+              <button class="button-plus" type="button">+</button>
+              <label class="designation designation-type" for="quantity">Дети:</label>
+              <div class="tooltip">
+                <button class="button-information" type="button">i</button>
+                <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
+                  лет. Дети до 6 лет размещаются бесплатно.</span>
               </div>
+              <button class="button-minus" type="button">-</button>
+              <input class="field-form" type="number" id="quantity" name="quantity" value="1">
+              <button class="button-minus" type="button">+</button>
             </div>
-            <div class="button-load-more">
-              <button class="button button-primary find-button" type="submit">Найти</button>
-            </div>
-        </div>
-        </div>
+          </div>
+          <div class="button-load-more">
+            <button class="button button-primary find-button" type="submit">Найти</button>
+          </div>
         </form>
       </div>
-    </footer>
+    </div>
   </div>
 </body>
-
 </html>
