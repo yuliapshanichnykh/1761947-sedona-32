@@ -69,7 +69,7 @@
           <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="catalog-filter-group">
-              <legend class="catalog-filter-title">Инфаструктура</legend>
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -95,7 +95,7 @@
               </ul>
             </fieldset>
             <fieldset class="catalog-filter-list">
-              <legend class="catalog-filter-title">Тип жилья</legend>
+              <legend class="catalog-filter-title">Тип жилья:</legend>
               <ul class="catalog-filter-list">
                 <li class="catalog-filter-item">
                   <label class="control">
@@ -124,14 +124,12 @@
               <legend class="catalog-filter-title">Стоимость, ₽:</legend>
               <div class="range-wrapper-inputs">
                 <label class="catalog-filter-label">
-                  <div class="placeholder" data-placeholder="от">
-                    <input class="catalog-filter-input" type="number" name="min-price" placeholder="0">
-                  </div>
+                  <input class="catalog-filter-input" type="number" name="min-price" placeholder="0">
+                  <span>от</span>
                 </label>
                 <label class="catalog-filter-label">
-                  <div class="placeholder" data-placeholder="до">
-                    <input class="catalog-filter-input catalog-filter-input-type" type="number" name="max-price" placeholder="9000">
-                  </div>
+                  <input class="catalog-filter-input catalog-filter-input-type" type="number" name="max-price" placeholder="9000">
+                  <span>до</span>
                 </label>
               </div>
               <div class="range">

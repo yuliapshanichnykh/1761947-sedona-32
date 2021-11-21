@@ -57,7 +57,7 @@ img {
 .button-primary {
   color: #ffffff;
   background-color: #83b3d3;
-  margin-top: 2px;
+  margin-top: -1px;
 }
 .button:focus {
   outline: none;
@@ -114,6 +114,10 @@ img {
   width: 160px;
 }
 .button-catalog-apply {
+  font-size: 16px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-left: -2px;
   height: 48px;
   width: 160px;
   font-family: "PT Sans", sans-serif;
@@ -127,10 +131,13 @@ img {
   background-color: #68a2ca;
 }
 .button-catalog {
+  margin-left: -2px;
+  padding: 0;
   background-color: transparent;
   height: 48px;
   width: 160px;
   border: none;
+  margin-top: 6px;
   font-style: normal;
   font-weight: normal;
   font-family: "PT Sans", sans-serif;
@@ -195,6 +202,7 @@ img {
   line-height: 36px;
 }
 .button-favorites {
+  margin: 0;
   padding: 20px 0 20px 0px;
   font-size: 16px;
   line-height: 21px;
@@ -365,17 +373,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.placeholder {
-  position: relative;
-  color: #ffffff;
-}
-.placeholder:after {
-  position: absolute;
-  left: 76%;
-  top: 10px;
-  content: attr(data-placeholder);
-  pointer-events: none;
-  opacity: 0.6;
+input.catalog-filter-input::placeholder {
   color: #ffffff;
 }
 .description {
@@ -671,7 +669,7 @@ main {
 }
 .inner-header-title {
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 1px;
   font-style: normal;
   font-weight: 700;
   font-size: 60px;
@@ -747,13 +745,26 @@ main {
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 23px;
-  border-radius: 4px;
+  border-radius: 4px 0 0 4px;
   width: 109px;
   height: 16px;
   color: #ffffff;
   background-color: transparent;
   border: 2px solid #ffffff;
   padding: 14px 14px 12px 17px;
+  list-style: none;
+}
+.catalog-filter-input[type=number] {
+  -moz-appearance: textfield;
+}
+.catalog-filter-input[type=number]::-webkit-outer-spin-button,
+.catalog-filter-input[type=number]::-webkit-inner-spin-button {
+  display: none;
+  margin: 0;
+}
+.catalog-filter-input-type {
+  border-radius: 0 4px 4px 0;
+  border-left: 0;
 }
 .catalog-filter-input:active {
   background-color: #756257;
@@ -773,7 +784,7 @@ input.catolog-filter-input:hover {
 }
 .catalog-filter-group {
   width: 200px;
-  margin: 0 79px 0 0;
+  margin: 0 68px 0 2px;
   padding: 0;
   border: 0;
 }
@@ -796,11 +807,54 @@ input.catolog-filter-input:hover {
 }
 .control-label {
   margin: 0;
+  margin-left: -3px;
   color: #ffffff;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
+}
+.catalog-filter-label {
+  position: relative;
+  font-size: 18px;
+  line-height: 23px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.catalog-filter-input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 40px 10px 17px;
+  width: 100%;
+  height: 48px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 23px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.catalog-filter-input::-webkit-outer-spin-button,
+.catalog-filter-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.catalog-filter-input[type=number] {
+  -moz-appearance: textfield;
+}
+.catalog-filter-label:first-child .catalog-filter-input {
+  border-radius: 4px 0 0 4px;
+  border-right: 0;
+}
+.catalog-filter-label:last-child .catalog-filter-input {
+  border-radius: 0 4px 4px 0;
+}
+.catalog-filter-label span {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 .control-input {
   width: 20px;
@@ -864,7 +918,18 @@ input.catolog-filter-input:hover {
 }
 .popover-content {
   padding: 25px;
+  padding-right: 22px;
   height: 100%;
+}
+.button-bucket {
+  min-width: 43px;
+}
+.bucket:focus {
+  padding: 4px;
+  outline-color: #83b3d3;
+}
+.bucket {
+  margin-top: -6px;
 }
 .cart-item {
   display: flex;
@@ -956,7 +1021,7 @@ input.catolog-filter-input:hover {
   background-image: url(../images/catalog/arrow-catalog.svg);
   background-repeat: no-repeat;
   background-position: right 21px center;
-  appearance: none;
+  -webkit-appearance: none;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -988,7 +1053,8 @@ input.catolog-filter-input:hover {
   margin-right: 79px;
 }
 .catalog-filter-title {
-  padding-bottom: 30px;
+  margin-left: -3px;
+  padding-bottom: 28px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -1017,7 +1083,7 @@ input.catolog-filter-input:hover {
   background-image: url(../images/catalog/check-mark.svg);
   background-repeat: no-repeat;
   content: "";
-  background-size: 90%;
+  background-size: 14px auto;
   background-position: center;
 }
 .control-input[type="checkbox"]:hover + .control-mark {
@@ -1048,7 +1114,7 @@ input.catolog-filter-input:hover {
 }
 .range-wrapper-inputs {
   display: flex;
-  margin-top: 7px;
+  margin-top: 5px;
 }
 .range-scale {
   position: relative;
@@ -1187,7 +1253,7 @@ input.catolog-filter-input:hover {
   cursor: pointer;
 }
 .modal-title {
-  margin-top: -20px;
+  margin-top: 0px;
   padding-bottom: 31px;
   padding-left: 26px;
   padding-top: 23px;
@@ -1273,7 +1339,7 @@ input.catolog-filter-input:hover {
   position: relative;
   left: 50%;
   transform: translate(-50%, 0);
-  margin-top: 5px;
+  margin-top: 2px;
   padding-top: 6px;
   border-radius: 10px;
   display: inline-block;
