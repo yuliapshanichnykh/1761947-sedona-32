@@ -311,30 +311,30 @@
         <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
         <form class="auth-form-main" action="https://echo.htmlacademy.ru/" method="post">
           <div class="auth-form">
-            <label class="designation">Дата заезда:</label>
-            <input class="auth-form-field field" type="text" id="auth-form-field" name="data"
+            <label class="designation" for="arrival-date">Дата заезда:</label>
+            <input class="auth-form-field field" type="text" id="arrival-date" name="data"
               placeholder="27 апреля 2020">
           </div>
           <p class="mark">Мы не можем отправить вас в прошлое</p>
           <div class="auth-form">
-            <label class="designation">Дата выезда:</label>
-            <input class="auth-form-field field" type="text" id="data-list" name="data" placeholder="1 сенатября 2021">
+            <label class="designation" for="date-of-departure">Дата выезда:</label>
+            <input class="auth-form-field field field-type" type="text" id="date-of-departure" name="data" placeholder="1 сенатября 2021">
           </div>
           <p class="mark the-note">На эти даты есть свободные номера. Пока есть.</p>
           <div class="number-of-people">
             <div class="auth-form">
-              <label class="designation-first" for="quantity">Взрослые:</label>
+              <label class="designation-first" for="adults">Взрослые:</label>
               <button class="button-minus" type="button">-</button>
-              <input class="field-form" type="number" id="field-form" name="quantity" value="2">
+              <input class="field-form" type="number" id="adults" name="quantity" value="2">
               <button class="button-plus" type="button">+</button>
-              <label class="designation designation-type" for="quantity">Дети:</label>
+              <label class="designation designation-type" for="children">Дети:</label>
               <div class="tooltip">
                 <button class="button-information" type="button">i</button>
                 <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18
                   лет. Дети до 6 лет размещаются бесплатно.</span>
               </div>
               <button class="button-minus" type="button">-</button>
-              <input class="field-form" type="number" id="quantity" name="quantity" value="1">
+              <input class="field-form" type="number" id="children" name="quantity" value="1">
               <button class="button-minus" type="button">+</button>
             </div>
           </div>
