@@ -1235,9 +1235,9 @@ input.catolog-filter-input:hover {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
 }
-.modal-container-close {
+/* .modal-container-close {
   display: none;
-}
+} */
 .modal-close-button {
   margin: 54px 70px;
   border-radius: 50px;
@@ -1454,6 +1454,7 @@ input.catolog-filter-input:hover {
 }
 .button-minus path:hover {
   fill: #000000;
+  opacity: 1;
 }
 .button-minus:focus {
   background-color: #ffffff;
