@@ -1453,22 +1453,21 @@ input.catolog-filter-input:hover {
   background-color: #f2f2f2;
 }
 .button-minus path:hover {
-  fill: #000000;
   opacity: 1;
 }
 .button-minus:focus {
   background-color: #ffffff;
   border-radius: 4px;
-  fill: #000000;
+  opacity: 1;
   border: 3px solid #83b3d3;
 }
 .button-minus:active {
-  color: #000000;
+  fill: #000000;
   opacity: 0.2;
+  background-color: #e5e5e5;
 }
 .minus-image {
-  position: relative;
-  padding-bottom: 3px;
+  opacity: 30%;
 }
 .button-plus {
   border: none;
@@ -1488,7 +1487,7 @@ input.catolog-filter-input:hover {
   border: 3px solid #83b3d3;
 }
 .button-plus:active {
-  color: #000000;
+  fill: #000000;
   opacity: 0.2;
   background-color: #e5e5e5;
 }
