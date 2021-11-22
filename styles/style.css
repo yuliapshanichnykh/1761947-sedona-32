@@ -280,6 +280,7 @@ main {
 }
 .navigation-icon {
   position: absolute;
+  outline: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -288,7 +289,7 @@ main {
   fill: #dbdbdb;
 }
 .navigation-icon-favorit {
-  margin-left: 0;
+  margin-left: -6px;
 }
 .navigation-link-favorites {
   height: 50px;
@@ -297,10 +298,10 @@ main {
   position: relative;
   display: flex;
   justify-content: center;
-  margin-right: 37px;
+  margin-right: 50px;
   margin-top: 5px;
   align-items: center;
-  width: 38px;
+  width: 21px;
   height: 38px;
   text-decoration: none;
 }
@@ -336,6 +337,7 @@ main {
   right: -12px;
   border: 3px solid #83B3D3;
   border-radius: 10px;
+  outline: none;
 }
 .navigation-link-current::after {
   position: absolute;
@@ -359,7 +361,7 @@ main {
 .favorites {
   position: absolute;
   bottom: 50%;
-  left: 17%;
+  left: 50%;
   transform: translateX(3px);
   display: flex;
   flex-direction: column;
@@ -736,6 +738,8 @@ input.catalog-filter-input::placeholder {
 .breadcrumbs-link:focus {
   border: 3px solid #83b3d3;
   border-radius: 4px;
+  margin-left: -3px;
+  margin-right: -3px;
 }
 .breadcrumbs-link:active {
   color: #ffffff;
@@ -1106,6 +1110,9 @@ input.catolog-filter-input:hover {
   border: 3px solid #83b3d3;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 4px;
+  outline: none;
+  width: 14px;
+  height: 14px;
 }
 .control-input[type="checkbox"]:active + .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
@@ -1129,7 +1136,10 @@ input.catolog-filter-input:hover {
 .control-input[type="radio"]:focus + .control-mark {
   border: 3px solid #83b3d3;
   background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 4px;
+  border-radius: 50px;
+  outline: none;
+  width: 14px;
+  height: 14px;
 }
 .control-input[type="radio"]:active + .control-mark {
   background-color: rgba(255, 255, 255, 0.3);
@@ -1318,6 +1328,7 @@ input.catolog-filter-input:hover {
   display: block;
 }
 .auth-form-field {
+  outline: none;
   border: none;
   box-sizing: border-box;
   margin-top: 4px;
@@ -1464,11 +1475,15 @@ input.catolog-filter-input:hover {
   font-size: 18px;
   line-height: 40px;
 }
+.minus-image {
+  position: absolute;
+}
 .button-minus {
+  position: relative;
   border: none;
   margin-top: 3px;
   padding: 0;
-  width: 46px;
+  width: 50px;
   height: 50px;
   background-color: #f2f2f2;
 }
